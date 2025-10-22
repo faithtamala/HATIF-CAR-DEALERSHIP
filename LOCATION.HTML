@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hatif Motor Dealers - Our Locations</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0c040;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #222;
+      font-family: "Georgia", serif;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      background-color: #f0c040;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    nav li:hover {
+      transform: translateY(-3px);
+      background-color: #e0b030;
+    }
+
+    nav a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 3px solid #f0c040;
+      padding-bottom: 8px;
+      font-family: 'Georgia', serif;
+      margin-bottom: 20px;
+    }
+
+    ul.locations {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    ul.locations li {
+      margin-bottom: 10px;
+    }
+
+    .shops {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .shop {
+      background-color: #faf0d5;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      max-width: 300px;
+      text-align: center;
+      padding: 15px;
+      flex: 1 1 280px;
+    }
+
+    .shop img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .shop h3 {
+      margin: 0 0 8px;
+      color: #222;
+      font-family: "Georgia", serif;
+    }
+
+    .shop p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .shops {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .shop {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo2.png.png" width="100" height="200" alt="Hatif Motor Dealers Logo" class="logo" />
+    <h1>Hatif Motor Dealers</h1>
+  </header>
+
+  <header>
+    <h1>Our Locations</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="welcome page.html">Welcome Page</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="LOCATION.html">Location</a></li>
+      <li><a href="VEHICLES.html">Vehicles</a></li>
+      <li><a href="Payment Methods.html">Methods of Payment</a></li>
+      <li><a href="GIFT HAMPERS.html">Gift Hampers</a></li>
+      <li><a href="driving classes.html">Driving Classes</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>Shops in Kenya</h2>
+      <ul class="locations">
+        <li>Nairobi - Avenuewings Kodhek Road</li>
+        <li>Mombasa - Nyali Complex, Links Road</li>
+        <li>Kisumu - Mega City Mall, Nairobi Road</li>
+        <li>Eldoret - Zion Mall, Uganda Road</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>International Branches</h2>
+      <ul class="locations">
+        <li>Dar es Salaam, Tanzania – Nyerere Road</li>
+        <li>Kampala, Uganda – Acacia Avenue</li>
+        <li>Kigali, Rwanda – KN 5 Rd, Remera</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Our Shops</h2>
+      <div class="shops">
+        <div class="shop">
+          <img src="ROOM 1.PNG" alt="Nairobi Shop">
+          <h3>Nairobi Shop</h3>
+          <p>Located in Avenue Plaza. Our flagship store offers the widest selection of vehicles and expert customer support.</p>
+        </div>
+
+        <div class="shop">
+          <img src="ROOM 2.PNG" alt="Mombasa Shop">
+          <h3>Mombasa Shop</h3>
+          <p>Situated at Nyali Complex, Mombasa, our coastal branch ensures quick access to vehicles for our customers near the ocean.</p>
+        </div>
+
+        <div class="shop">
+          <img src="ROOM 3.PNG" alt="Kampala Shop">
+          <h3>Kampala Shop</h3>
+          <p>Our international branch in Acacia Avenue, Kampala offers a variety of vehicles and tailored financing options.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Car Exhibition Showroom</h2>
+      <div class="shops">
+        <div class="shop">
+          <img src="webimage.png" alt="Car Exhibition Showroom">
+          <h3>Hatif Motors Exhibition Hall</h3>
+          <p>Located in Nairobi, our exhibition hall showcases the latest models — from luxury sedans to rugged 4x4s. Enjoy guided tours and learn more about your dream vehicle.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Hatif Motor Dealers. All Rights Reserved.
+  </footer>
+</body>
+</html>
