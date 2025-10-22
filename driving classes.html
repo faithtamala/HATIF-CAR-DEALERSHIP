@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hatif Motor Dealers - Driving Classes Registration</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0c040;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header img.logo {
+      max-width: 180px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #222;
+      font-family: "Georgia", serif;
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav li {
+      background-color: #f0c040;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+    nav li:hover {
+      transform: translateY(-3px);
+      background-color: #e0b030;
+    }
+    nav a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      border-bottom: 3px solid #f0c040;
+      padding-bottom: 10px;
+      font-family: 'Georgia', serif;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      padding: 10px;
+      font-size: 1em;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    select:focus {
+      border-color: #f0c040;
+      outline: none;
+    }
+    button {
+      background-color: #f0c040;
+      border: none;
+      padding: 15px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e0b030;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 640px) {
+      .container {
+        margin: 20px 15px;
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo2.png.png" alt="Hatif Motor Dealers Logo" class="logo" />
+  <h1>Driving Classes Registration</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="welcome.html">Welcome Page</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="LOCATION.html">Location</a></li>
+    <li><a href="VEHICLES.html">Vehicles</a></li>
+    <li><a href="Payment Methods.html">Methods of Payment</a></li>
+    <li><a href="GIFT HAMPERS.html">Gift Hampers</a></li>
+    <li><a href="driving classes.html">Driving Classes</a></li>
+   
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Register for Driving Lessons</h2>
+  <form id="drivingClassForm" action="#" method="POST" onsubmit="return validateForm()">
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="fullName" required placeholder="Your full name" />
+
+    <label for="age">Age *</label>
+    <input type="number" id="age" name="age" min="18" max="100" required placeholder="Your age" />
+    <div class="note">Minimum age is 18 years</div>
+
+    <label for="vehicleModel">Preferred Vehicle Model *</label>
+    <select id="vehicleModel" name="vehicleModel" required>
+      <option value="">Select a model</option>
+      <option value="Audi R8">Audi R8</option>
+      <option value="Audi Q7">Audi Q7</option>
+      <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
+      <option value="Toyota Prado">Toyota Prado</option>
+      <option value="Lexus TX">Lexus TX</option>
+      <option value="Lexus RX">Lexus RX</option>
+      <option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
+      <option value="Mercedes-Benz E-Class">Mercedes-Benz E-Class</option>
+      <option value="Mazda CX-5">Mazda CX-5</option>
+      <option value="Mazda 3">Mazda 3</option>
+      <option value="Nissan Patrol">Nissan Patrol</option>
+      <option value="Nissan X-Trail">Nissan X-Trail</option>
+      <option value="BMW X5">BMW X5</option>
+      <option value="BMW 3 Series">BMW 3 Series</option>
+      <option value="Subaru Outback">Subaru Outback</option>
+      <option value="Subaru Forester">Subaru Forester</option>
+      <option value="G-Wagon">G-Wagon</option>
+      <option value="Toyota Fortuner">Toyota Fortuner</option>
+      <option value="Toyota Hilux Revolution">Toyota Hilux Revolution</option>
+      <option value="Tesla Model S">Tesla Model S</option>
+      <option value="Tesla Model X">Tesla Model X</option>
+      <option value="Ford Ranger Raptor">Ford Ranger Raptor</option>
+      <option value="Land Rover Defender">Land Rover Defender</option>
+    </select>
+
+    <label for="licenseCategory">License Category</label>
+    <select id="licenseCategory" name="licenseCategory">
+      <option value="">Select if any</option>
+      <option value="None">None (New Learner)</option>
+      <option value="Motorcycle">Motorcycle (A)</option>
+      <option value="Private Car">Private Car (B)</option>
+      <option value="Commercial Vehicle">Commercial Vehicle (C)</option>
+    </select>
+
+    <label for="preferredSchedule">Preferred Schedule *</label>
+    <select id="preferredSchedule" name="preferredSchedule" required>
+      <option value="">Select a time slot</option>
+      <option value="Weekday Mornings">Weekday Mornings</option>
+      <option value="Weekday Afternoons">Weekday Afternoons</option>
+      <option value="Weekend">Weekend</option>
+    </select>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+    <label for="phone">Phone Number *</label>
+    <input type="text" id="phone" name="phone" required placeholder="+254 7XX XXX XXX"
+           pattern="^\+?\d{10,15}$" title="Enter a valid phone number" />
+
+    <button type="submit">Submit Registration</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Hatif Motor Dealers. All Rights Reserved.
+</footer>
+
+<script>
+  function validateForm() {
+    const age = document.getElementById('age').value;
+    if (age < 18) {
+      alert('You must be at least 18 years old to register for driving lessons.');
+      return false;
+    }
+    // Additional validation can go here
+    alert('Thank you for registering! We will contact you shortly.');
+    return true;
+  }
+</script>
+
+</body>
+</html>
